@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #00C793;
+    padding: 3px;
+}
+
+.image_logo_company {
+    margin-left: 1em;
+    padding: 3px;
+    width: 11em;
+}
+
+.links_mainPage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 620px;
+    
+}
+
+.links_mainPage a{
+    text-decoration: none;
+    color: #00C793;
+    position: relative;
+    display: inline-block;
+}
+.link_mainPage_nav_login{
+    text-decoration: none;
+    color: #00C793;
+    position: relative;
+    display: inline-block;
+}
+
+.link_mainPage_nav_login::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00C793;
+    transition: width 0.3s ease-in-out;
+}
+
+.link_mainPage_nav_login:hover::after{
+    width: 100%;
+}
+
+
+.links_mainPage a::after{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00C793;
+    transition: width 0.3s ease-in-out;
+}
+
+.links_mainPage a:hover::after{
+    width: 100%;
+}
+
+.SingUp_and_SingIn {
+    color: #00C793;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    padding: 3px;
+    margin-right: 1em;
+}
+
+.Costarica_nav_ {
+    border-bottom: 2px solid #00C793;
+    padding-bottom: 1px;
+}
+.Cos_az{
+    color: #5086c1;
+}
+
+.Tar_whi{
+    color: #ffffff;
+}
+
+.ica_red {
+    color: #f45572;
+}
+
+.knowMoreAboutCR{
+    margin-top: 2em;
+    padding: 60px;
+    background-image: url(https://www.natuwa.com/wp-content/uploads/2015/07/14_perf_lapa_sianoptera.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.knowMoreAboutCR_inside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #ffffff;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+}
