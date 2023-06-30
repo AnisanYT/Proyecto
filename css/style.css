@@ -78,7 +78,7 @@ nav{
 
 .img_cr_despliegue img:hover{
     cursor: crosshair;
-    width: 500px;
+    width: 300px;
     opacity: 1;
     filter: contrast(150%);
 }
