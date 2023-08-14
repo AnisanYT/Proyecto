@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <nav class="statickNavBar navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="statickNavBar container-fluid">
         <a class="" href="#"
           ><img
             src="../img/logoAmigosTripPng.png"
@@ -31,11 +31,44 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="d-flex collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="flex-grow-1 navbar-nav">
+            <a
+              class="nav_Textdecoration text-light nav-link active"
+              aria-current="page"
+              href="#"
+              >Acerca de nosotros</a
+            >
+            <a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="#"
+              >Contactenos</a
+            ><a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="#"
+              >Blog</a
+            ><a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="#"
+              >Lugares</a
+            ><a
+              class="nav_Textdecoration text-light nav-link active fs-4 m-1 p-2"
+              aria-current="page"
+              href="#"
+              >Servicios</a
+            >
+            <br />
+          </div>
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-            <a class="nav-link active" aria-current="page" href="#">Home</a
-            ><a class="nav-link active" aria-current="page" href="#">Home</a>
+            <button class="inicioSesion btn btn-primary fs-4 m-1 p-3">
+              Iniciar Sesión
+            </button>
+            <button class="Registro btn btn-primary fs-4 m-1 p-3">
+              Registrar
+            </button>
           </div>
         </div>
       </div>
@@ -230,12 +263,25 @@
         </div>
       </div>
       <div class="row my-5">
-        <h1 class="text-center my-4"><b>Actividades destacadas</b></h1>
+        <div class="wavesCss">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              fill="#58a52c"
+              fill-opacity="1"
+              d="M0,256L12.6,234.7C25.3,213,51,171,76,138.7C101.1,107,126,85,152,96C176.8,107,202,149,227,192C252.6,235,278,277,303,245.3C328.4,213,354,107,379,58.7C404.2,11,429,21,455,69.3C480,117,505,203,531,202.7C555.8,203,581,117,606,112C631.6,107,657,181,682,218.7C707.4,256,733,256,758,245.3C783.2,235,808,213,834,224C858.9,235,884,277,909,288C934.7,299,960,277,985,240C1010.5,203,1036,149,1061,128C1086.3,107,1112,117,1137,112C1162.1,107,1187,85,1213,85.3C1237.9,85,1263,107,1288,128C1313.7,149,1339,171,1364,165.3C1389.5,160,1415,128,1427,112L1440,96L1440,0L1427.4,0C1414.7,0,1389,0,1364,0C1338.9,0,1314,0,1288,0C1263.2,0,1238,0,1213,0C1187.4,0,1162,0,1137,0C1111.6,0,1086,0,1061,0C1035.8,0,1011,0,985,0C960,0,935,0,909,0C884.2,0,859,0,834,0C808.4,0,783,0,758,0C732.6,0,707,0,682,0C656.8,0,632,0,606,0C581.1,0,556,0,531,0C505.3,0,480,0,455,0C429.5,0,404,0,379,0C353.7,0,328,0,303,0C277.9,0,253,0,227,0C202.1,0,177,0,152,0C126.3,0,101,0,76,0C50.5,0,25,0,13,0L0,0Z"
+            ></path>
+          </svg>
+          <div class="wavestitle">
+            <h1 class="text-center my-4"><b>Actividades destacadas</b></h1>
+          </div>
+        </div>
         <div class="col-6">
           <div class="row">
-            <h1 class="text-center">
-              Conoce mucho acerca de las actividades de Costa Rica
-            </h1>
+            <a class="aWithoutDecoration" onclick="showMessageOrigina()"
+              ><h1 class="text-center">
+                Conoce mucho acerca de las actividades de Costa Rica
+              </h1></a
+            >
           </div>
           <div class="row">
             <h2 class="text-center" id="titleParrafo"></h2>
@@ -267,10 +313,12 @@
                   alt="agustermales"
                 />
                 <img
+                  onclick="showMessages()"
                   src="../img/avistamiento.jpeg"
                   alt="avistamientoEnCostaRica"
                 />
                 <img
+                  onclick="showMessagess()"
                   src="../img/DeportesdeMontaña.jpg"
                   alt="Deportes de Montaña"
                 />
@@ -280,6 +328,59 @@
         </div>
       </div>
     </div>
+    <footer class="footer p-5">
+      <div class="row">
+        <div class="col-4 p-2">
+          <div>
+            <h2>Más información sobre nosotros.</h2>
+            <p class="ancho fs-5 ext-light-emphasis">
+              Nuestro objetivo como empresa es brindarte la mejor experiencia
+              para que puedas escoger tu lugar de pase en nuestro hermoso país
+              Costa Rica
+            </p>
+          </div>
+          <div>
+            <h3>Escribemos por medio de Email</h3>
+            <form action="" class="ancho">
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="formatog form-control"
+                  id="exampleFormControlInput1"
+                  placeholder="Email"
+                />
+              </div>
+              <div class="mb-3">
+                <textarea
+                  class="formatog form-control"
+                  id="exampleFormControlTextarea1"
+                  placeholder="Comentario"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button class="button_Color2 fs-5">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-4 p-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            voluptatibus nemo odit consequatur nihil quasi. Incidunt quaerat
+            quidem voluptates? Dicta inventore omnis eos aliquam aliquid
+            temporibus cum quam delectus nulla.
+          </p>
+        </div>
+        <div class="col-4 p-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            voluptatibus nemo odit consequatur nihil quasi. Incidunt quaerat
+            quidem voluptates? Dicta inventore omnis eos aliquam aliquid
+            temporibus cum quam delectus nulla.
+          </p>
+        </div>
+      </div>
+      <div class="row">aa</div>
+    </footer>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
