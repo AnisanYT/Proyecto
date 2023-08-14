@@ -5,4 +5,6 @@ function showMessage() {
   let title = document.getElementById("titleParrafo");
   title.textContent = "Relajación en Aguas Termales y Spas Naturales";
   title.style.padding = "4px";
+  title.style.margin = "10px";
+  title.style.color = "#59A52C";
 }
