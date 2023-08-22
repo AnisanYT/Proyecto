@@ -244,7 +244,7 @@ body {
 }
 
 .footer::selection {
-  color: #58a52c;
+  color: white;
   background-color: white;
 }
 
@@ -286,4 +286,17 @@ body {
 @font-face {
   font-family: "Poppins";
   src: url(../fonts/Poppins/Poppins-Light.ttf);
+}
+
+.linksDecoration {
+  text-decoration: none;
+  color: white;
+}
+
+.linksDecoration:hover {
+  color: steelblue;
+}
+
+.derechosAutor {
+  background-color: #498128;
 }
