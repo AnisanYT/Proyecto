@@ -55,8 +55,9 @@ body {
 }
 
 .Registro:hover {
-  background-color: rgba(0, 0, 0, 0.623);
-  border: 2px solid rgb(0, 0, 0, 0.623);
+  background-color: white;
+  border: 2px solid #59a52c;
+  color: gray;
   transform: scaleY(1.1);
 }
 
@@ -243,11 +244,6 @@ body {
   background-color: #58a52c;
 }
 
-.footer::selection {
-  color: white;
-  background-color: white;
-}
-
 .ancho {
   width: 60%;
 }
@@ -299,4 +295,12 @@ body {
 
 .derechosAutor {
   background-color: #498128;
+  color: white;
+}
+.login {
+  text-decoration: none;
+  color: #59a52c;
+}
+.login:hover {
+  color: #fff;
 }
