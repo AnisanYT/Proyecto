@@ -279,10 +279,6 @@ body {
   border-radius: 20px;
   margin-left: 4px;
 }
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins/Poppins-Light.ttf);
-}
 
 .linksDecoration {
   text-decoration: none;
@@ -291,6 +287,43 @@ body {
 
 .linksDecoration:hover {
   color: steelblue;
+}
+.contenedorIndice {
+  border: 1px solid #58a52c;
+  padding: 20px;
+  border-radius: 20px;
+}
+.linkIndice {
+  color: #58a52c;
+}
+.linkIndice:hover {
+  color: #295c0c;
+}
+ul {
+  list-style: square;
+  color: #58a52c;
+}
+
+.imagenFormatoDeVista,
+.imagenFormatoDeVista2,
+.imagenFormatoDeVista3,
+.imagenFormatoDeVista4 {
+  padding: 40px;
+  width: 1200px;
+  height: 300px;
+  background-repeat: no-repeat;
+}
+.imagenFormatoDeVista {
+  background-image: url(../img/cuerda-tirolina.jpg);
+}
+.imagenFormatoDeVista2 {
+  background-image: url(../img/pacuare.jpg);
+}
+.imagenFormatoDeVista3 {
+  background-image: url(../img/ballena-costa-rica.jpg);
+}
+.imagenFormatoDeVista4 {
+  background-image: url(../img/Jardines-de-orquideas2.jpg);
 }
 
 .derechosAutor {
@@ -303,4 +336,28 @@ body {
 }
 .login:hover {
   color: #fff;
+}
+.buttons {
+  color: #fff;
+  background-color: #59a52c;
+}
+.buttons:hover {
+  color: #59a52c;
+  background-color: #fff;
+  border: 0.3px solid #59a52c;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "Poppins-Bold";
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+.containerOfVideo {
+  border: 2px solid #58a52c;
+  height: 319px;
+  box-shadow: 1px 0px 10px #58a52c;
 }
